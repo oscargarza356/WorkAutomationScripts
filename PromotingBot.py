@@ -36,7 +36,7 @@ def commentInInstagramPostNumber(webPageLink, postNumber):
 
     post = browser.find_element_by_xpath("//*[@id='react-root']/section/main/article/div/div[1]/div[1]/div["+str(postNumber)+"]/a")
     post.click()
-    time.sleep(2)
+    time.sleep(6)
 
     clickComment = browser.find_element_by_xpath('/html/body/div[4]/div/div[2]/div/article/div[2]/section[1]/a[2]')
     clickComment.click()
@@ -64,8 +64,10 @@ webPagesForScripts = [
                       'https://www.instagram.com/worldstar/', 'https://www.instagram.com/quavohuncho/',
                       'https://www.instagram.com/asaprocky/', 'https://www.instagram.com/iamcardib/',
                       'https://www.instagram.com/liluzivert/', 'https://www.instagram.com/lilpump/',
-                      'https://www.instagram.com/hypebeast/'  ,'https://www.instagram.com/smokepurpp/',
-                      'https://www.instagram.com/kimkardashian/','https://www.instagram.com/justinbieber/']
+                      'https://www.instagram.com/hypebeast/', 'https://www.instagram.com/smokepurpp/',
+                      'https://www.instagram.com/kimkardashian/','https://www.instagram.com/justinbieber/',
+                      'https://www.instagram.com/supremepatty/','https://www.instagram.com/complex/',
+                      'https://www.instagram.com/supreme_leaks_news/']
 
 random.shuffle(webPagesForScripts)
 

@@ -64,5 +64,7 @@ webPagesForScripts = ["https://www.instagram.com/kanyew.est/", 'https://www.inst
                       'https://www.instagram.com/lilpump/','https://www.instagram.com/smokepurpp/',
                       'https://www.instagram.com/kimkardashian/','https://www.instagram.com/justinbieber/']
 
-for webPage in random.shuffle(webPagesForScripts):
+random.shuffle(webPagesForScripts)
+
+for webPage in webPagesForScripts:
     followUsers(webPage, postNumber)
